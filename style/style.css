@@ -1,0 +1,78 @@
+body {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/16584/retina_wood.png");
+    font-family: sans-serif;
+}
+
+.container {
+    margin-top: 5%;
+    align-content: center;
+}
+
+#searchField {
+    margin-top: 12%; 
+}
+
+#searchField p {
+    margin: 0;
+}
+
+#logo {
+    margin-top: -10px;
+}
+
+.grid {
+    margin-top: 60px;
+}
+
+/* ---- input ---- */
+
+input[type="text"] {
+    font-size: 20px;
+}
+
+/* ---- .element-item ---- */
+
+div.thisBook {
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 330px;
+    margin: 12px;
+    padding: 5px;
+    color: #262524;
+    display: -webkit- flex;
+    perspective: 600;
+}
+
+/* ---- flip ---- */
+
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .face {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: #888;
+  color: #f5f3f0;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.back h5, p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1;
+}
+
